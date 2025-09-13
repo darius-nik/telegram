@@ -9,7 +9,7 @@ class Config:
     TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '8079917344:AAF-SJi9EixwuwlSAuQW55BJ9XhAsPJs-Rk')
     
     # OpenAI Configuration
-    OPENAI_API_KEY = os.getenv('OPENAI_API_KEY', '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')
+    OPENAI_API_KEY = os.getenv()
     
     # Database Configuration
     DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///telegram_bot.db')
