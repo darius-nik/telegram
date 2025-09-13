@@ -412,9 +412,9 @@ sudo firewall-cmd --reload
 
 ## 📞 پشتیبانی
 
+- 📱 **تلگرام**: [@Darius_nake](https://t.me/Darius_nake)
 - 🐛 **گزارش باگ**: [Issues](https://github.com/yourusername/admin-group-bot/issues)
 - 💡 **پیشنهاد ویژگی**: [Discussions](https://github.com/yourusername/admin-group-bot/discussions)
-- 📧 **ایمیل**: your-email@example.com
 
 ## ⭐ ستاره دادن
 
