@@ -45,3 +45,5 @@ echo 🚀 اجرای ربات...
 python run.py
 
 pause
+
+

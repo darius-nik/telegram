@@ -150,12 +150,19 @@ sudo chown telegram-bot:telegram-bot /home/telegram-bot/telegram-bot/manage.sh
 echo "🔥 Configuring firewall..."
 if command -v ufw &> /dev/null; then
     sudo ufw allow ssh
+    sudo ufw allow 80/tcp
+    sudo ufw allow 443/tcp
+    sudo ufw allow out 443/tcp
+    sudo ufw allow out 80/tcp
+    sudo ufw allow out 8443/tcp
     sudo ufw --force enable
-    echo "✅ UFW firewall configured"
+    echo "✅ UFW firewall configured with HTTP/HTTPS access"
 elif command -v firewall-cmd &> /dev/null; then
     sudo firewall-cmd --permanent --add-service=ssh
+    sudo firewall-cmd --permanent --add-service=http
+    sudo firewall-cmd --permanent --add-service=https
     sudo firewall-cmd --reload
-    echo "✅ Firewalld configured"
+    echo "✅ Firewalld configured with HTTP/HTTPS access"
 fi
 
 # نمایش اطلاعات نصب
@@ -184,3 +191,5 @@ echo "📊 Service name: telegram-bot"
 echo ""
 echo "⚠️  Don't forget to add your bot token to config.py!"
 echo ""
+
+

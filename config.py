@@ -6,7 +6,7 @@ load_dotenv()
 
 class Config:
     # Telegram Bot Configuration
-    TELEGRAM_BOT_TOKEN = os.getenv('')
+    TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', 'YOUR_BOT_TOKEN_HERE')
     
     # Application Configuration
     DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
